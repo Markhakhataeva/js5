@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+
+
+
+
+
+
+    </style>
+
+
+    <ul id="mylist">
+        
+    </ul>
+
+
+    <button id="mybutton" onclick="addNewElement()">
+        Add new element
+    </button>
+
+    <button id="mybutton2" onclick="addNewElement2()">
+        Add new element 2
+    </button>
+
+    <button id="mybutton3" onclick="deleteelement()">
+        delete x
+    </button>
+
+
+
+    <script>
+        const addNewElement=()=>{
+            let newitem=document.createElement('li')
+            newitem.setAttribute('class',"list-etem")
+            let textnode=document.createTextNode('новый элемент')
+            newitem.appendChild(textnode)
+            let list=document.getElementById('mylist')
+            list.appendChild(newitem)
+            console.log(newitem)
+        }
+
+
+
+
+        const addNewElement2=()=>{
+            let newitem=document.createElement('li')
+            newitem.setAttribute('class',"list-etem")
+            let textnode=document.createTextNode('новейший элемент')
+            newitem.prepend(textnode)
+            let list=document.getElementById('mylist')
+            list.prepend(newitem)
+            console.log(newitem)
+        }
+
+        
+
+        
+
+
+
+    </script>
+
+
+
+
+
+    <script src="5.js"></script>
+</body>
+</html>
