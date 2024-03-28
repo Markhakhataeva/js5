@@ -23,3 +23,37 @@ const addNewElement2=()=>{
 
 
 
+
+function deleteFirstElement(){
+    let list=document.getElementById("mylist");
+    if(list.children.length>0){
+        list.removeChild(list.children[0])
+    }
+}
+
+
+
+
+function deleteLastElement(){
+    let list=document.getElementById("mylist");
+    if(list.children.length>0){
+        list.removeChild(list.children[list.children.length-1])
+    }
+}
+
+
+
+function selfDestruct(){
+    document.body.innerHTML="";
+    document.body.style.backgroundColor="black";
+}
+
+
+
+
+
+
+
+
+
+
